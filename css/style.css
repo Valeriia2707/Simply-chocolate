@@ -87,7 +87,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     padding: 0 32px;
@@ -156,7 +156,7 @@ a {
   align-items: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .header-list-div {
     gap: 90px;
   }
@@ -195,5 +195,217 @@ a {
 }
 
 .mobile-modal {
+  display: none;
   transform: translateY(-200%);
+}
+
+.hero-section {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 40px;
+  }
+}
+
+.hero-section .container {
+  background-color: rgba(17, 17, 17, 0.7);
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 100%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/hero-bg_mob@1x.jpg);
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  max-width: 335px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .hero-section .container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 100%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-bg_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section .container {
+    background-color: rgba(17, 17, 17, 0.7);
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 100%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-bg_tab@1x.jpg);
+    border-radius: 30px;
+    max-width: 704px;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (max-width: 1199px) {
+  .hero-section .container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 100%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-bg_tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section .container {
+    background-color: rgba(17, 17, 17, 0.7);
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 100%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-bg.jpg);
+    max-width: 1136px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .hero-section .container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 100%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-bg@2x.jpg);
+  }
+}
+
+.hero-title {
+  padding-top: 395px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    padding-top: 671px;
+    font-size: 28px;
+    line-height: 1.21;
+    max-width: 484px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    padding-top: 381px;
+  }
+}
+
+.hero-div {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-div {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-tablet-div {
+    display: flex;
+    gap: 153px;
+    padding-bottom: 40px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-tablet-div {
+    gap: 585px;
+  }
+}
+
+.hero-button {
+  border-radius: 100px;
+  padding: 12px 28px;
+  background: var(--accent);
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-button {
+    padding: 14px 40px;
+  }
+}
+
+.hero-link {
+  border: 1px solid var(--white);
+  border-radius: 100px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-link {
+    padding: 14px 40px;
+  }
+}
+
+.hero-scroll-div {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-scroll-div {
+    padding-bottom: 0;
+  }
+}
+
+.scroll-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+
+.hero-svg-div {
+  border-radius: 100%;
+  background-color: var(--white);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-svg-div {
+    width: 38px;
+    height: 38px;
+  }
+  .hero-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
