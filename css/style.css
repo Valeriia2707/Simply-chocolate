@@ -25,6 +25,10 @@ body {
   letter-spacing: var(--letter-spacing);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* RESET */
 h1,
 h2,
@@ -83,12 +87,26 @@ a {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 32px;
+  }
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    gap: 138px;
+  }
 }
 
 .header-logo-link {
@@ -103,7 +121,6 @@ a {
   align-items: center;
   display: flex;
   gap: 4px;
-  margin-right: 138px;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,6 +154,12 @@ a {
   display: flex;
   gap: 28px;
   align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-list-div {
+    gap: 90px;
+  }
 }
 
 @media screen and (max-width: 767px) {
